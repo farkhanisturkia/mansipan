@@ -34,10 +34,32 @@ class KeluarController extends Controller
             'tujuan'        => $request->tujuan,
             'keterangan'    => $request->keterangan,
             'jenis_surat'   => $request->jenis_surat,
-            'path'          => null,
+            'path'          => $request->path,
         ]);
 
         Toast::title('Data Surat Keluar Telah Dibuat')->autoDismiss(3);
+
+        return to_route('keluar.index');
+    }
+
+    public function edit(Keluar $keluar) {
+        return view('keluar.edit', [
+            'keluar'   => $keluar,
+        ]);
+    }
+
+    public function update(Request $request, Keluar $keluar)
+    {
+        $keluar->update([
+            'nomor_surat'   => $request->nomor_surat,
+            'tanggal'       => $request->tanggal,
+            'tujuan'        => $request->tujuan,
+            'keterangan'    => $request->keterangan,
+            'jenis_surat'   => $request->jenis_surat,
+            'path'          => $request->path,
+        ]);
+
+        Toast::title('Data Telah Diubah')->warning()->autoDismiss(3);
 
         return to_route('keluar.index');
     }

@@ -12,7 +12,7 @@
                     <Link href="{{ route('masuk.create') }}" class="px-4 py-2 bg-green-500 rounded text-white hover:bg-green-300 hover:text-black font-semibold">Tambah Data</Link>
                     <x-splade-table class="mt-4" :for="$masuks"  pagination-scroll="preserve">
                         <x-splade-cell actions as="$masuks">
-                            {{-- <Link href="{{ route('profil.edit', $profils) }}" class="me-2 px-3 py-2 bg-yellow-500 rounded text-white hover:bg-yellow-300 hover:text-black font-semibold"> Ubah </Link> --}}
+                            <Link href="{{ route('masuk.edit', $masuks) }}" class="me-2 px-3 py-2 bg-yellow-500 rounded text-white hover:bg-yellow-300 hover:text-black font-semibold"> Ubah </Link>
                             <x-splade-form 
                                 action="{{ route('masuk.destroy', $masuks) }}"
                                 method="delete"

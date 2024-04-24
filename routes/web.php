@@ -45,11 +45,15 @@ Route::middleware('splade')->group(function () {
         Route::get('/masuk', [MasukController::class, 'index'])->name('masuk.index');
         Route::get('/masuk/create', [MasukController::class, 'create'])->name('masuk.create');
         Route::post('/masuk/store', [MasukController::class, 'store'])->name('masuk.store');
+        Route::get('/masuk/edit/{masuk}', [MasukController::class, 'edit'])->name('masuk.edit');
+        Route::put('/masuk/edit/{masuk}', [MasukController::class, 'update'])->name('masuk.update');
         Route::delete('/masuk/{masuk}', [MasukController::class, 'destroy'])->name('masuk.destroy');
 
         Route::get('/keluar', [KeluarController::class, 'index'])->name('keluar.index');
         Route::get('/keluar/create', [KeluarController::class, 'create'])->name('keluar.create');
         Route::post('/keluar/store', [KeluarController::class, 'store'])->name('keluar.store');
+        Route::get('/keluar/edit/{keluar}', [KeluarController::class, 'edit'])->name('keluar.edit');
+        Route::put('/keluar/edit/{keluar}', [KeluarController::class, 'update'])->name('keluar.update');
         Route::delete('/keluar/{keluar}', [KeluarController::class, 'destroy'])->name('keluar.destroy');
     });
 

@@ -34,10 +34,32 @@ class MasukController extends Controller
             'tujuan'        => $request->tujuan,
             'keterangan'    => $request->keterangan,
             'jenis_surat'   => $request->jenis_surat,
-            'path'          => null,
+            'path'          => $request->path,
         ]);
 
         Toast::title('Data Surat Masuk Telah Dibuat')->autoDismiss(3);
+
+        return to_route('masuk.index');
+    }
+
+    public function edit(Masuk $masuk) {
+        return view('masuk.edit', [
+            'masuk'   => $masuk,
+        ]);
+    }
+
+    public function update(Request $request, Masuk $masuk)
+    {
+        $masuk->update([
+            'nomor_surat'   => $request->nomor_surat,
+            'tanggal'       => $request->tanggal,
+            'tujuan'        => $request->tujuan,
+            'keterangan'    => $request->keterangan,
+            'jenis_surat'   => $request->jenis_surat,
+            'path'          => $request->path,
+        ]);
+
+        Toast::title('Data Telah Diubah')->warning()->autoDismiss(3);
 
         return to_route('masuk.index');
     }
