@@ -12,9 +12,12 @@ use Phpml\CrossValidation\StratifiedRandomSplit;
 class HasilController extends Controller
 {
     public function index() {
+        
+        $masuk = Masuk::where('is_spam', 1)->where('is_dataset', 0)->get();
+
         return view('hasil.index', [
-            // 'ac' => $accuracy,
-            'pr' => $predictedLabel
+            'datas' => $masuk,
         ]);
+
     }
 }
