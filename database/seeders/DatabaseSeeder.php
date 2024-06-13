@@ -28,19 +28,397 @@ class DatabaseSeeder extends Seeder
         Masuk::create([
             'nomor_surat'   => 'ABC123',
             'tanggal'       => Carbon::create('2000', '01', '01'),
-            'tujuan'        => 'Gedung DPRD Surabaya',
-            'keterangan'    => 'Harap dibalas secepatnya',
-            'jenis_surat'   => 'Rahasia',
-            'path'          => null
+            'tujuan'        => 'Gereja A',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
         ]);
 
-        Keluar::create([
+        Masuk::create([
             'nomor_surat'   => 'EFG456',
             'tanggal'       => Carbon::create('2000', '01', '01'),
-            'tujuan'        => 'Gedung Medan Surabaya',
-            'keterangan'    => 'Permohonan maaf',
-            'jenis_surat'   => 'Rahasia',
-            'path'          => null
+            'tujuan'        => 'Gereja A',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja A',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja A',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja A',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja A',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja B',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja B',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja B',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja B',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja B',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja B',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja C',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja C',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja C',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja C',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja C',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja C',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja D',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja D',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja D',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja D',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja D',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja D',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja E',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja E',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja E',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja E',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja E',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja E',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja F',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja F',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja F',
+            'keterangan'    => 'Regular',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'ABC123',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja F',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Balasan Surat',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja F',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Proposal Pengajuan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 1
+        ]);
+
+        Masuk::create([
+            'nomor_surat'   => 'EFG456',
+            'tanggal'       => Carbon::create('2000', '01', '01'),
+            'tujuan'        => 'Gereja F',
+            'keterangan'    => 'Urgent',
+            'jenis_surat'   => 'Data Rekapan',
+            'path'          => null,
+            'is_dataset'    => true,
+            'is_spam'       => 0
         ]);
     }
 }

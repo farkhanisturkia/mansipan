@@ -15,7 +15,7 @@
                         <x-splade-input class="mb-3" id="tujuan" name="tujuan" label="tujuan" required />
                         <x-splade-input class="mb-3" id="keterangan" name="keterangan" label="keterangan" required />
                         <x-splade-input class="mb-3" id="jenis_surat" name="jenis_surat" label="jenis_surat" required />
-                        <x-splade-file class="mb-3" id="path" name="path" label="path" required />
+                        <x-splade-file class="mb-3" id="path" name="path" label="Image" min-size="100KB" max-size="5MB" filepond preview required />
                         <x-splade-submit label="Tambahkan" />
                     </x-splade-form>
                 </div>

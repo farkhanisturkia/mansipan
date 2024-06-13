@@ -13,11 +13,16 @@ return new class extends Migration
     {
         Schema::create('masuks', function (Blueprint $table) {
             $table->id();
+            $table->boolean('is_dataset')->default(false)->nullable();
+            $table->boolean('is_spam');
             $table->string('nomor_surat')->nullable();
             $table->date('tanggal')->nullable();
-            $table->string('tujuan')->nullable();
-            $table->text('keterangan')->nullable();
-            $table->string('jenis_surat')->nullable();
+            // $table->string('tujuan')->nullable();
+            // $table->text('keterangan')->nullable();
+            // $table->string('jenis_surat')->nullable();
+            $table->enum('tujuan', ['Gereja A', 'Gereja B', 'Gereja C', 'Gereja D', 'Gereja E', 'Gereja F'])->nullable();
+            $table->enum('keterangan', ['Regular', 'Urgent'])->nullable();
+            $table->enum('jenis_surat', ['Balasan Surat', 'Proposal Pengajuan', 'Data Rekapan'])->nullable();
             $table->string('path')->default(null)->nullable();
             $table->timestamps();
         });

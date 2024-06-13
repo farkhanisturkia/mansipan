@@ -16,5 +16,7 @@ class Masuk extends Model
         'keterangan',
         'jenis_surat',
         'path',
+        'is_dataset',
+        'is_spam'
     ];
 }

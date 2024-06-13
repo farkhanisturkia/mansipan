@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Keluar;
 use Illuminate\Http\Request;
+use App\Exports\DataKeluarTable;
 use ProtoneMedia\Splade\SpladeTable;
 use ProtoneMedia\Splade\Facades\Toast;
+use Illuminate\Support\Facades\Storage;
 
 class KeluarController extends Controller
 {
@@ -17,8 +19,8 @@ class KeluarController extends Controller
                 ->column('tujuan')
                 ->column('keterangan')
                 ->column('jenis_surat')
-                ->column('path')
-                ->column('actions')
+                ->column('image', exportAs:false)
+                ->column('actions', exportAs:false)
                 ->paginate(15),
         ]);
     }
@@ -28,13 +30,23 @@ class KeluarController extends Controller
     }
 
     public function store(Request $request) {
+
+        $request->validate([
+            'path'     => 'required|image|mimes:jpeg,jpg,png'
+        ]);
+
+        $image              = $request->file('path');
+        $image_name         = $image->hashName();
+
+        Storage::put("public/images", $image);
+
         Keluar::create([
             'nomor_surat'   => $request->nomor_surat,
             'tanggal'       => $request->tanggal,
             'tujuan'        => $request->tujuan,
             'keterangan'    => $request->keterangan,
             'jenis_surat'   => $request->jenis_surat,
-            'path'          => $request->path,
+            'path'          => "Storage/images/$image_name",
         ]);
 
         Toast::title('Data Surat Keluar Telah Dibuat')->autoDismiss(3);
@@ -48,15 +60,24 @@ class KeluarController extends Controller
         ]);
     }
 
-    public function update(Request $request, Keluar $keluar)
-    {
+    public function update(Request $request, Keluar $keluar){
+
+        $request->validate([
+            'path'     => 'required|image|mimes:jpeg,jpg,png'
+        ]);
+
+        $image              = $request->file('path');
+        $image_name         = $image->hashName();
+
+        Storage::put("public/images", $image);
+        
         $keluar->update([
             'nomor_surat'   => $request->nomor_surat,
             'tanggal'       => $request->tanggal,
             'tujuan'        => $request->tujuan,
             'keterangan'    => $request->keterangan,
             'jenis_surat'   => $request->jenis_surat,
-            'path'          => $request->path,
+            'path'          => "Storage/images/$image_name",
         ]);
 
         Toast::title('Data Telah Diubah')->warning()->autoDismiss(3);
@@ -70,5 +91,13 @@ class KeluarController extends Controller
         Toast::title('Data Surat Keluar Telah Dihapus')->danger()->autoDismiss(3);
 
         return to_route('keluar.index');
+    }
+    
+    public function export(Request $request) {
+
+        $date_start = $request->date_start;
+        $date_end = $request->date_end;
+
+        return new DataKeluarTable($date_start, $date_end);
     }
 }
