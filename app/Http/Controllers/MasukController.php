@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Masuk;
+use App\Tables\masukTable;
 use Illuminate\Http\Request;
 use App\Exports\DataMasukTable;
 use Maatwebsite\Excel\Facades\Excel;
@@ -15,16 +16,7 @@ class MasukController extends Controller
 {
     public function index() {
         return view('masuk.index', [
-            'masuks' => SpladeTable::for(Masuk::class)
-                ->column('nomor_surat')
-                ->column('tanggal')
-                ->column('tujuan')
-                ->column('keterangan')
-                ->column('jenis_surat')
-                ->column('image', exportAs:false)
-                ->column('actions', exportAs:false)
-                ->defaultSort('tanggal', 'desc')
-                ->paginate(15),
+            'masuks' => masukTable::class
         ]);
     }
 

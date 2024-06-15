@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Masuk;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HasilController;
 use App\Http\Controllers\MasukController;
@@ -36,7 +37,10 @@ Route::middleware('splade')->group(function () {
 
     Route::middleware('auth')->group(function () {
         Route::get('/dashboard', function () {
-            return view('dashboard');
+            $masuk = Masuk::where('is_dataset', false)->get();
+            return view('dashboard', [
+                'masuk' => $masuk,
+            ]);
         })->middleware(['verified'])->name('dashboard');
 
         Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

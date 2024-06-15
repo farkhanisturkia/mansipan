@@ -22,7 +22,7 @@
                     <x-splade-table class="mt-4" :for="$masuks"  pagination-scroll="preserve">
                         <x-splade-cell image as="$masuks">
                             @if ($masuks->path)
-                                <img src="{{ asset($masuks->path) }}" alt="{{ $masuks->nomor_surat }}">
+                                <img style="width: 80px; height:50px;" src="{{ asset($masuks->path) }}" alt="{{ $masuks->nomor_surat }}">
                             @endif
                         </x-splade-cell>
                         <x-splade-cell actions as="$masuks">

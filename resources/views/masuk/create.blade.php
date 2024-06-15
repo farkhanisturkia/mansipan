@@ -29,7 +29,7 @@
                             <option value="Proposal Pengajuan">Proposal Pengajuan</option>
                             <option value="Data Rekapan">Data Rekapan</option>
                         </x-splade-select>
-                        <x-splade-file class="mb-3" id="path" name="path" label="Image" min-size="100KB" max-size="5MB" filepond preview required />
+                        <x-splade-file class="mb-3" id="path" name="path" label="Image" min-size="10KB" max-size="5MB" filepond preview required />
                         <x-splade-submit label="Tambahkan" />
                     </x-splade-form>
                 </div>
