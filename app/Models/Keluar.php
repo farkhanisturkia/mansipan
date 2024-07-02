@@ -15,6 +15,7 @@ class Keluar extends Model
         'tujuan',
         'keterangan',
         'jenis_surat',
+        'deskripsi',
         'path',
     ];
 }

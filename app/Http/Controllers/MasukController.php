@@ -141,6 +141,7 @@ class MasukController extends Controller
             'tujuan'        => $request->tujuan,
             'keterangan'    => $request->keterangan,
             'jenis_surat'   => $request->jenis_surat,
+            'deskripsi'     => $request->deskripsi,
             'path'          => "Storage/images/$image_name",
             'is_spam'       => $prediksiSpam,
         ]);
@@ -262,6 +263,10 @@ class MasukController extends Controller
             'path'     => 'required|image|mimes:jpeg,jpg,png'
         ]);
 
+        $filter = "Storage/images/";
+        $result = str_replace($filter, "", $masuk->path);
+        Storage::delete("public/images/" . $result);
+
         $image              = $request->file('path');
         $image_name         = $image->hashName();
 
@@ -273,6 +278,7 @@ class MasukController extends Controller
             'tujuan'        => $request->tujuan,
             'keterangan'    => $request->keterangan,
             'jenis_surat'   => $request->jenis_surat,
+            'deskripsi'     => $request->deskripsi,
             'path'          => "Storage/images/$image_name",
             'is_spam'       => $prediksiSpam,
         ]);
@@ -283,6 +289,11 @@ class MasukController extends Controller
     }
 
     public function destroy(Masuk $masuk) {
+
+        $filter = "Storage/images/";
+        $result = str_replace($filter, "", $masuk->path);
+        Storage::delete("public/images/" . $result);
+
         $masuk->delete();
 
         Toast::title('Data Surat Masuk Telah Dihapus')->danger()->autoDismiss(3);

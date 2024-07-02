@@ -19,6 +19,7 @@ class KeluarController extends Controller
                 ->column('tujuan')
                 ->column('keterangan')
                 ->column('jenis_surat')
+                ->column('deskripsi')
                 ->column('image', exportAs:false)
                 ->column('actions', exportAs:false)
                 ->paginate(15),
@@ -46,6 +47,7 @@ class KeluarController extends Controller
             'tujuan'        => $request->tujuan,
             'keterangan'    => $request->keterangan,
             'jenis_surat'   => $request->jenis_surat,
+            'deskripsi'     => $request->deskripsi,
             'path'          => "Storage/images/$image_name",
         ]);
 
@@ -66,6 +68,10 @@ class KeluarController extends Controller
             'path'     => 'required|image|mimes:jpeg,jpg,png'
         ]);
 
+        $filter = "Storage/images/";
+        $result = str_replace($filter, "", $keluar->path);
+        Storage::delete("public/images/" . $result);
+
         $image              = $request->file('path');
         $image_name         = $image->hashName();
 
@@ -77,6 +83,7 @@ class KeluarController extends Controller
             'tujuan'        => $request->tujuan,
             'keterangan'    => $request->keterangan,
             'jenis_surat'   => $request->jenis_surat,
+            'deskripsi'     => $request->deskripsi,
             'path'          => "Storage/images/$image_name",
         ]);
 
@@ -86,6 +93,11 @@ class KeluarController extends Controller
     }
 
     public function destroy(Keluar $keluar) {
+
+        $filter = "Storage/images/";
+        $result = str_replace($filter, "", $keluar->path);
+        Storage::delete("public/images/" . $result);
+
         $keluar->delete();
 
         Toast::title('Data Surat Keluar Telah Dihapus')->danger()->autoDismiss(3);

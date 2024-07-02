@@ -20,6 +20,7 @@ return new class extends Migration
             $table->enum('tujuan', ['Gereja A', 'Gereja B', 'Gereja C', 'Gereja D', 'Gereja E', 'Gereja F'])->nullable();
             $table->enum('keterangan', ['Regular', 'Urgent'])->nullable();
             $table->enum('jenis_surat', ['Balasan Surat', 'Proposal Pengajuan', 'Data Rekapan'])->nullable();
+            $table->longText('deskripsi')->nullable();
             $table->string('path')->default(null)->nullable();
             $table->timestamps();
         });

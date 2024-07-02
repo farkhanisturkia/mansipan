@@ -15,6 +15,7 @@ class Masuk extends Model
         'tujuan',
         'keterangan',
         'jenis_surat',
+        'deskripsi',
         'path',
         'is_dataset',
         'is_spam'

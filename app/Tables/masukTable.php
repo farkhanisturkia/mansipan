@@ -53,6 +53,7 @@ class masukTable extends AbstractTable
             ->column('tujuan')
             ->column('keterangan')
             ->column('jenis_surat')
+            ->column('deskripsi')
             ->column('image', exportAs:false)
             ->column('actions', exportAs:false)
             ->defaultSort('tanggal', 'desc')
