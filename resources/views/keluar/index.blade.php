@@ -22,7 +22,7 @@
                     <x-splade-table class="mt-4" :for="$keluars"  pagination-scroll="preserve">
                         <x-splade-cell image as="$keluars">
                             @if ($keluars->path)
-                                <img src="{{ asset($keluars->path) }}" alt="{{ $keluars->nomor_surat }}" class="max-w-40 max-h-40">
+                                <img style="width: 80px; height:50px;" src="{{ asset($keluars->path) }}" alt="{{ $keluars->nomor_surat }}" class="max-w-40 max-h-40">
                             @endif
                         </x-splade-cell>
                         <x-splade-cell actions as="$keluars">

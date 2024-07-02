@@ -54,6 +54,7 @@ Route::middleware('splade')->group(function () {
         Route::put('/masuk/edit/{masuk}', [MasukController::class, 'update'])->name('masuk.update');
         Route::delete('/masuk/{masuk}', [MasukController::class, 'destroy'])->name('masuk.destroy');
         Route::get('/masuk/export/', [MasukController::class, 'export'])->name('masuk.export');
+        Route::get('/masuk/naive/{masuk}', [MasukController::class, 'naive'])->name('masuk.naive');
         
         Route::get('/keluar', [KeluarController::class, 'index'])->name('keluar.index');
         Route::get('/keluar/create', [KeluarController::class, 'create'])->name('keluar.create');
