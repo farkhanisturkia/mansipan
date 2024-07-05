@@ -39,9 +39,9 @@
                                     <td style="border: 1px solid black; padding: 8px; text-align: left;">
                                         @foreach ($predictedLabel as $item)
                                             @if ($item == 1)
-                                                true (<span style="color: red">SPAM</span>)
+                                                true (<span class="font-bold" style="color: red">SPAM</span>)
                                             @else
-                                                false (<span style="color: green">Not SPAM</span>)
+                                                false (<span class="font-bold" style="color: green">Not SPAM</span>)
                                             @endif
                                         @endforeach
                                     </td>
