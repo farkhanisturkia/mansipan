@@ -10,7 +10,8 @@
         "laravel/tinker": "^2.9",
         "maatwebsite/excel": "^3.1",
         "php-ai/php-ml": "^0.10.0",
-        "protonemedia/laravel-splade-breeze": "^2.5"
+        "protonemedia/laravel-splade-breeze": "^2.5",
+        "sastrawi/sastrawi": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
