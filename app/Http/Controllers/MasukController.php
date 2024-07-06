@@ -893,6 +893,8 @@ class MasukController extends Controller
         foreach ($tokens as $token) {
             $stemmedTokens[] = $stemmer->stem($token);
         }
+        $wordCounts = array_count_values($stemmedTokens);
+
         $stemmedInput[] = implode(' ', $stemmedTokens);
 
         $vectorizer = new TokenCountVectorizer(new WhitespaceTokenizer());
@@ -907,6 +909,7 @@ class MasukController extends Controller
         return view('masuk.naive', [
             'newInput'  => $newInput,
             'stemmedTokens' => $stemmedTokens,
+            'wordCounts'    => $wordCounts,
             'stemmedInput'  => $stemmedInput,
             'predictedLabel'    => $predictedLabel
         ]);

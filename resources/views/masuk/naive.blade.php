@@ -13,29 +13,54 @@
                         <table style="border-collapse: collapse; width: 100%;">
                             <tbody>
                                 <tr class="header-column">
-                                    <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">Plain Description</th>
-                                    <td style="border: 1px solid black; padding: 8px; text-align: left;">{{$newInput}}</td>
+                                    <th
+                                        style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">
+                                        Plain Description</th>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: left;">
+                                        {{ $newInput }}</td>
                                 </tr>
                                 <tr class="header-column">
-                                    <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">Stemmed Description</th>
+                                    <th
+                                        style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">
+                                        Stemmed Description</th>
                                     <td style="border: 1px solid black; padding: 8px; text-align: left;">
                                         @foreach ($stemmedTokens as $stemmedTokens)
-                                            {{$stemmedTokens}}
+                                            {{ $stemmedTokens }}
                                         @endforeach
                                     </td>
                                 </tr>
                                 <tr class="header-column">
-                                    <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">Stemmed Description in vector</th>
+                                    <th
+                                        style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">
+                                        Tokenizer Stemmed</th>
+                                    <td style="border: 1px solid black; padding: 8px; text-align: left;">
+                                        <table style="border-collapse: collapse; width: 100%;">
+                                            @foreach ($wordCounts as $index => $item)
+                                                <tr>
+                                                    <td>{{ $index }}</td>
+                                                    <td>:</td>
+                                                    <td>{{ $item }}</td>
+                                                </tr>
+                                            @endforeach
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr class="header-column">
+                                    <th
+                                        style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">
+                                        Stemmed Description in vector</th>
                                     <td style="border: 1px solid black; padding: 8px; text-align: left;">
                                         @foreach ($stemmedInput as $stemmedInp)
                                             @foreach ($stemmedInp as $key => $item)
-                                                {{$item}}
+                                                {{ $item }}
                                             @endforeach
                                         @endforeach
                                     </td>
                                 </tr>
                                 <tr class="header-column">
-                                    <th style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">Is Spam</th>
+                                    <th
+                                        style="border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2; position: sticky; left: 0; z-index: 1;">
+                                        Is Spam</th>
                                     <td style="border: 1px solid black; padding: 8px; text-align: left;">
                                         @foreach ($predictedLabel as $item)
                                             @if ($item == 1)
