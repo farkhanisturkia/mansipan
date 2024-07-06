@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('masuks', function (Blueprint $table) {
             $table->id();
             $table->boolean('is_dataset')->default(false)->nullable();
-            $table->boolean('is_spam');
+            $table->boolean('is_spam')->nullable();
             $table->string('nomor_surat')->nullable();
             $table->date('tanggal')->nullable();
             $table->enum('tujuan', ['Gereja A', 'Gereja B', 'Gereja C', 'Gereja D', 'Gereja E', 'Gereja F'])->nullable();

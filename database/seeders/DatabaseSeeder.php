@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Undangan Ibadah Gabungan: Menyatakan rasa terima kasih atas undangan, mengabarkan kesediaan untuk hadir, dan menyampaikan informasi terkait jumlah peserta dan kebutuhan logistik.',
+            'deskripsi'     => 'Pagi ini, saya bangun dengan semangat dan bersemangat untuk memulai hari. Cuaca cerah membuat saya merasa bahagia dan bersemangat. Saya berencana untuk melakukan yoga pagi di taman dekat rumah.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -44,7 +44,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Renovasi Gereja: Menguraikan kondisi bangunan gereja yang perlu direnovasi, menjelaskan manfaat renovasi, merinci anggaran yang dibutuhkan, dan menyertakan desain dan gambar renovasi.',
+            'deskripsi'     => 'Kemarin, saya menghadiri acara ulang tahun teman di kafe favorit kami. Suasana di sana sangat ramai dan menyenangkan. Kami tertawa dan berbicara sepanjang malam. Makanan di kafe itu enak sekali.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -56,7 +56,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'          => 'Rekapan Kehadiran Ibadah: Menyajikan data jumlah jemaat yang hadir dalam ibadah selama periode tertentu, diklasifikasikan berdasarkan usia, jenis kelamin, dan kelompok usia.',
+            'deskripsi'     => 'Musim panas ini, saya berencana untuk mengunjungi pantai di Pulau Bali. Saya ingin melihat matahari terbenam yang indah di pantai sambil menikmati angin laut yang segar. Liburan ini sudah lama saya nantikan.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -68,7 +68,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Surat Permohonan Bantuan: Menyatakan rasa empati atas kondisi yang dihadapi, menginformasikan bentuk bantuan yang dapat diberikan, dan menjelaskan mekanisme penyaluran bantuan.',
+            'deskripsi'     => 'Minggu depan, saya akan menghadiri seminar tentang pengembangan diri di kota. Topiknya sangat menarik bagi saya. Saya berharap bisa belajar banyak hal baru dan bertemu dengan orang-orang inspiratif.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -80,7 +80,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Pembinaan Remaja: Menjelaskan latar belakang perlunya pembinaan remaja, merumuskan tujuan dan sasaran pembinaan, memaparkan program kegiatan pembinaan, dan merinci anggaran yang dibutuhkan.',
+            'deskripsi'     => 'Tahun lalu, saya berkesempatan untuk melakukan perjalanan ke Eropa. Saya mengunjungi Paris dan Roma, dua kota yang penuh sejarah dan keindahan. Pengalaman itu sungguh berkesan dan tak terlupakan bagiku.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -92,7 +92,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Koleksi Dana Persembahan: Menyajikan data jumlah dana persembahan yang dikumpulkan dalam ibadah selama periode tertentu, diklasifikasikan berdasarkan jenis ibadah dan sumber dana.',
+            'deskripsi'     => 'Akhir pekan lalu, saya menghabiskan waktu bersama keluarga di perkebunan buah. Udara segar dan pemandangan hijau menenangkan pikiran kami. Kami menikmati buah segar langsung dari pohon sambil bercengkrama.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -104,7 +104,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Surat Pemberitahuan Ibadah Natal: Mengabarkan kesediaan untuk berpartisipasi dalam ibadah Natal, dan menyampaikan informasi terkait paduan suara, dekorasi, dan konsumsi.',
+            'deskripsi'     => 'Bulan depan, rencananya saya akan mengikuti kursus bahasa Jepang di pusat belajar bahasa. Saya tertarik mempelajari budaya dan bahasa Jepang. Semoga bisa lancar berbicara dalam waktu singkat.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -116,7 +116,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Perayaan Hari Raya: Menguraikan makna dan sejarah hari raya, menjelaskan rencana perayaan, merinci anggaran yang dibutuhkan, dan menyertakan daftar panitia dan susunan acara.',
+            'deskripsi'     => 'Selama liburan musim panas, saya merencanakan perjalanan ke pegunungan untuk mendaki gunung tertinggi di daerah itu. Pemandangan alam yang menakjubkan dan udara sejuk akan menjadi pengalaman yang tidak terlupakan.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -128,7 +128,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Kegiatan Gereja: Menyajikan data jenis kegiatan gereja yang dilaksanakan selama periode tertentu, jumlah peserta, dan anggaran yang digunakan.',
+            'deskripsi'     => 'Minggu lalu, saya mengunjungi museum seni lokal yang baru dibuka di kota. Koleksi seni di sana sangat menginspirasi dan indah. Saya juga menghadiri tur yang dipandu untuk memahami lebih dalam karya seniman.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -140,7 +140,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Surat Permohonan Doa: Menyatakan dukungan dan doa untuk kebutuhan yang disampaikan, dan menginformasikan waktu doa bersama yang dapat diikuti.',
+            'deskripsi'     => 'Tahun ini, saya berencana untuk memulai proyek kebun sayur di halaman belakang rumah. Saya ingin menanam berbagai jenis sayuran organik sendiri. Semoga bisa menghasilkan hasil panen yang melimpah.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -152,7 +152,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Beasiswa Pendidikan: Menjelaskan latar belakang perlunya beasiswa, merumuskan syarat dan ketentuan penerima beasiswa, memaparkan mekanisme seleksi, dan merinci anggaran yang dibutuhkan.',
+            'deskripsi'     => 'Hari ini, saya akan menghadiri konser musik rock favorit bersama teman-teman. Kami sudah menunggu acara ini sejak lama. Atmosfir konser yang energik pasti akan membuat kami semakin antusias.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -164,7 +164,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Anggota Jemaat: Menyajikan data jumlah anggota jemaat berdasarkan usia, jenis kelamin, dan kelompok usia, serta informasi alamat dan kontak.',
+            'deskripsi'     => 'Beberapa bulan lalu, saya melakukan perjalanan bisnis ke luar negeri untuk pertemuan penting dengan klien internasional. Diskusi yang intensif menghasilkan kesepakatan yang menguntungkan bagi kedua belah pihak.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -176,7 +176,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Surat Pemberitahuan Seminar: Mengabarkan kesediaan untuk menghadiri seminar, dan menyampaikan informasi terkait jumlah peserta dan kebutuhan akomodasi.',
+            'deskripsi'     => 'Akhir tahun ini, saya merencanakan liburan keluarga ke pulau tropis yang eksotis. Kami ingin bersantai di pantai berpasir putih dan snorkeling di terumbu karang yang indah. Liburan ini akan menjadi momen istimewa.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -188,7 +188,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Pendirian Perpustakaan: Menjelaskan manfaat pendirian perpustakaan, merumuskan tujuan dan sasaran perpustakaan, memaparkan program pengelolaan perpustakaan, dan merinci anggaran yang dibutuhkan.',
+            'deskripsi'     => 'Hari ini, cuaca sangat cerah dan menyenangkan. Saya merasa bersemangat untuk melakukan petualangan ke alam terbuka. Bersama teman-teman, kami akan menjelajahi hutan dan menikmati keindahan alamnya.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -200,7 +200,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Pelayanan Rohani: Menyajikan data jenis pelayanan rohani yang dilakukan, jumlah penerima pelayanan, dan dampak pelayanan.',
+            'deskripsi'     => 'Bulan depan, saya akan menghadiri konferensi internasional tentang teknologi dan inovasi di kota metropolitan. Saya berharap bisa bertemu dengan para ahli dan belajar tentang perkembangan terbaru di bidang ini.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -212,7 +212,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Permohonan Bantuan Korban Bencana Alam: Menyatakan rasa duka cita atas bencana alam yang terjadi, menginformasikan bentuk bantuan yang telah disalurkan, dan menyampaikan rencana penyaluran bantuan selanjutnya.',
+            'deskripsi'     => 'Minggu lalu, saya menghabiskan waktu di pantai bersama keluarga. Kami bermain voli pantai dan berjemur di atas pasir putih. Ombak yang tenang membuat hari itu menjadi sempurna untuk bersantai.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -224,7 +224,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Perjalanan Misi: Menjelaskan tujuan perjalanan misi, merumuskan program kegiatan misi, memaparkan anggaran yang dibutuhkan, dan menyertakan daftar peserta dan jadwal perjalanan.',
+            'deskripsi'     => 'Tahun ini, saya akan merayakan ulang tahun ke-30 di rumah bersama teman-teman terdekat. Pesta kecil-kecilan dengan makanan lezat dan musik akan menjadi momen spesial untuk mengenang.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -236,7 +236,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Hasil Pembinaan Remaja: Menyajikan data kemajuan remaja dalam aspek spiritual, moral, dan sosial, diklasifikasikan berdasarkan jenis kegiatan dan indikator keberhasilan.',
+            'deskripsi'     => 'Akhir pekan kemarin, saya pergi berkemah di gunung bersama komunitas hiking. Malamnya, kami berkumpul di sekitar api unggun sambil bercerita dan menikmati marshmallow panggang.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -248,7 +248,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Undangan Ibadah Paskah: Menyatakan rasa terima kasih atas undangan, mengabarkan kesediaan untuk hadir bersama paduan suara gereja, dan menyampaikan informasi terkait kebutuhan akomodasi.',
+            'deskripsi'     => 'Hari ini, saya mengunjungi galeri seni untuk melihat pameran lukisan terbaru. Karya-karya seniman lokal sangat menginspirasi dan memberikan perspektif baru tentang ekspresi artistik.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -260,7 +260,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Peningkatan Kesejahteraan Guru Agama: Menjelaskan kondisi kesejahteraan guru agama yang perlu ditingkatkan, merumuskan program peningkatan kesejahteraan, memaparkan anggaran yang dibutuhkan, dan menyertakan data pendukung.',
+            'deskripsi'     => 'Musim panas ini, saya berencana untuk mengunjungi danau indah di daerah pegunungan. Aktivitas renang dan piknik di tepi danau akan menjadi waktu yang menyenangkan bersama keluarga.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -272,7 +272,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Penggunaan Dana Persembahan: Menyajikan data penggunaan dana persembahan berdasarkan jenis kegiatan dan program gereja, dilengkapi dengan bukti kwitansi dan laporan keuangan.',
+            'deskripsi'     => 'Minggu depan, saya akan mengikuti pelatihan manajemen waktu di kantor. Saya ingin meningkatkan produktivitas dan efisiensi kerja saya dalam menangani proyek-proyek yang sedang berjalan.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -284,7 +284,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Surat Edaran Tentang Protokol Kesehatan: Menyatakan komitmen untuk menerapkan protokol kesehatan dalam kegiatan gereja, dan menginformasikan langkah-langkah pencegahan yang telah dilakukan.',
+            'deskripsi'     => 'Akhir tahun lalu, saya menghadiri perayaan tahun baru di kota besar. Kembang api yang spektakuler dan suasana pesta membuat malam itu tidak terlupakan untuk saya dan teman-teman.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -296,7 +296,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Pendirian Klinik Kesehatan: Menjelaskan manfaat pendirian klinik kesehatan, merumuskan tujuan dan sasaran klinik, memaparkan program layanan kesehatan, dan merinci anggaran yang dibutuhkan.',
+            'deskripsi'     => 'Hari ini, saya berencana untuk menjelajahi kota dengan naik sepeda. Rute sepeda yang indah akan membawa saya ke tempat-tempat menarik dan memberikan pengalaman berbeda dalam menjelajah.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -308,9 +308,9 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Peserta Kursus Alkitab: Menyajikan data jumlah peserta kursus Alkitab berdasarkan jenis kursus, tingkat pendidikan, dan usia, dilengkapi dengan informasi kehadiran dan nilai ujian.',
+            'deskripsi'     => 'Tahun ini, saya ingin belajar memasak masakan Thailand. Saya tertarik dengan bumbu-bumbu yang khas dan cita rasa yang eksotis dari masakan Thailand yang terkenal di seluruh dunia.',
             'is_dataset'    => true,
-            'is_spam'       => 0
+            'is_spam'       => 1
         ]);
 
         Masuk::create([
@@ -320,7 +320,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Undangan Seminar Pembinaan Rohani: Mengabarkan kesediaan untuk menghadiri seminar, dan menyampaikan informasi terkait pembicara dan materi seminar.',
+            'deskripsi'     => 'Bulan depan, saya berencana untuk mengunjungi museum sejarah untuk belajar tentang peradaban kuno. Artefak-artefak bersejarah di sana pasti akan memberikan wawasan mendalam tentang masa lampau.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -332,9 +332,9 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Program Pemberdayaan Ekonomi Umat: Menjelaskan latar belakang perlunya program pemberdayaan ekonomi, merumuskan tujuan dan sasaran program, memaparkan program pelatihan dan pendampingan, dan merinci anggaran yang dibutuhkan.',
+            'deskripsi'     => 'Hari ini, saya akan mengunjungi taman binatang dengan anak-anak. Mereka sangat antusias untuk melihat berbagai binatang yang ada di sana dan belajar tentang habitat alami mereka.',
             'is_dataset'    => true,
-            'is_spam'       => 1
+            'is_spam'       => 0
         ]);
 
         Masuk::create([
@@ -344,7 +344,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Kunjungan Pastoral: Menyajikan data jumlah kunjungan pastoral, jenis masalah yang dihadapi jemaat, dan solusi yang diberikan, dilengkapi dengan dokumentasi foto dan catatan kunjungan.',
+            'deskripsi'     => 'Akhir pekan kemarin, saya berlibur di pantai dengan teman-teman. Kami bermain permainan air, seperti banana boat dan parasailing, yang membuat kami terhibur sepanjang hari.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -356,7 +356,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Surat Permohonan Dukungan Moral: Menyatakan dukungan moral dan doa untuk situasi yang dihadapi, dan menawarkan bantuan pendampingan psikologis jika diperlukan.',
+            'deskripsi'     => 'Musim semi ini, saya berencana untuk menanam berbagai jenis bunga di halaman belakang rumah. Saya ingin menciptakan taman bunga yang indah dan memikat dengan warna-warni bunga-bunga.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -368,7 +368,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Pertukaran Budaya Antar Gereja: Menjelaskan tujuan pertukaran budaya, merumuskan program kegiatan pertukaran budaya, memaparkan anggaran yang dibutuhkan, dan menyertakan daftar peserta dan jadwal kegiatan.',
+            'deskripsi'     => 'Minggu depan, saya akan mengikuti workshop fotografi untuk memperdalam keterampilan memotret saya. Saya ingin mengambil gambar-gambar yang artistik dan berkesan dalam perjalanan ini.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -380,9 +380,9 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Donasi dan Sponsorship: Menyajikan data jumlah donasi dan sponsorship yang diterima dari berbagai pihak, diklasifikasikan berdasarkan sumber donasi dan jenis kegiatan yang disponsori.',
+            'deskripsi'     => 'Hari ini, saya akan menghadiri acara pernikahan sahabat di gereja terdekat. Saya senang bisa menyaksikan momen istimewa mereka dan memberikan ucapan selamat yang tulus.',
             'is_dataset'    => true,
-            'is_spam'       => 0
+            'is_spam'       => 1
         ]);
 
         Masuk::create([
@@ -392,7 +392,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Permohonan Rekomendasi Beasiswa: Menyatakan dukungan atas permohonan beasiswa, menjelaskan prestasi dan potensi calon penerima, dan melampirkan surat rekomendasi resmi dari pimpinan gereja.',
+            'deskripsi'     => 'Minggu depan, rencananya saya akan mengunjungi kakek nenek di desa. Saya merindukan kehangatan keluarga dan ingin menghabiskan waktu bersama mereka di sana.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -404,9 +404,9 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Pembangunan Panti Asuhan: Menjelaskan kondisi dan kebutuhan anak-anak yatim piatu, merumuskan tujuan dan sasaran panti asuhan, memaparkan program pengasuhan dan pendidikan, dan merinci anggaran yang dibutuhkan.',
+            'deskripsi'     => 'Bulan depan, saya berencana untuk mengikuti kursus memasak untuk belajar membuat hidangan khas Mediterania. Saya ingin memperluas keterampilan memasak saya dengan cita rasa baru.',
             'is_dataset'    => true,
-            'is_spam'       => 0
+            'is_spam'       => 1
         ]);
 
         Masuk::create([
@@ -416,7 +416,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Regular',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'          => 'Rekapan Hasil Pendampingan Korban Kekerasan Dalam Rumah Tangga: Menyajikan data jumlah korban yang didampingi, jenis kekerasan yang dialami, dan intervensi yang diberikan, dilengkapi dengan dokumentasi foto dan catatan pendampingan.',
+            'deskripsi'     => 'Tahun ini, saya akan merayakan ulang tahun dengan perjalanan solo ke pantai terpencil. Saya mencari kedamaian dan keindahan alam yang menenangkan di sana.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
@@ -428,7 +428,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Balasan Surat',
             'path'          => null,
-            'deskripsi'     => 'Balasan Atas Undangan Konsultasi Hukum Gereja: Mengabarkan kesediaan untuk menghadiri konsultasi, menjelaskan tim hukum yang akan terlibat, dan menyampaikan informasi terkait waktu dan lokasi konsultasi.',
+            'deskripsi'     => 'Akhir pekan lalu, saya pergi berkemah di hutan nasional dengan kelompok hiking lokal. Mendaki gunung dan berkumpul di sekitar api unggun adalah pengalaman yang mendalam.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -440,7 +440,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Proposal Pengajuan',
             'path'          => null,
-            'deskripsi'     => 'Proposal Pengajuan Program Rehabilitasi Narkoba: Menjelaskan latar belakang maraknya penyalahgunaan narkoba di kalangan remaja, merumuskan tujuan dan sasaran program rehabilitasi, memaparkan program pemulihan dan konseling, dan merinci anggaran yang dibutuhkan.',
+            'deskripsi'     => 'Musim panas ini, saya berencana untuk melakukan road trip ke beberapa negara bagian di Amerika Serikat. Saya ingin menjelajahi keindahan alam dan kota-kota yang berbeda di sepanjang perjalanan.',
             'is_dataset'    => true,
             'is_spam'       => 1
         ]);
@@ -452,7 +452,7 @@ class DatabaseSeeder extends Seeder
             'keterangan'    => 'Urgent',
             'jenis_surat'   => 'Data Rekapan',
             'path'          => null,
-            'deskripsi'     => 'Rekapan Distribusi Bantuan Bencana Alam: Menyajikan data jenis bantuan yang didistribusikan, jumlah penerima bantuan, dan wilayah distribusi, dilengkapi dengan foto dokumentasi dan bukti penerimaan bantuan.',
+            'deskripsi'     => 'Hari ini, saya menghabiskan waktu di perpustakaan untuk membaca buku-buku tentang sejarah dunia. Saya menemukan informasi yang menarik dan menginspirasi dari buku-buku tersebut.',
             'is_dataset'    => true,
             'is_spam'       => 0
         ]);
